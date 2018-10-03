@@ -1,0 +1,4 @@
+- name: Instalando meu site 
+  hosts: all
+  roles:
+   - web_correcao

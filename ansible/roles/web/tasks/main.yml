@@ -1,0 +1,12 @@
+---
+# tasks file for initial
+- name: Pacotes Debian
+  include: debian.yml
+  when: ansible_os_family == "Debian" 
+
+- name: Pacotes Centos
+  include: centos.yml
+  when: ansible_os_family == "RedHat" 
+
+- name: Pacotes Centos
+  include: site1.yml

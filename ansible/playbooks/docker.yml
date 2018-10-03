@@ -1,0 +1,8 @@
+- name: Instalando Docker
+  hosts: docker
+  tasks:
+   - name: Baixando script
+     shell: 'curl -fsSL https://get.docker.com -o get-docker.sh'
+
+   - name: Instalando Docker
+     shell: 'sh get-docker.sh'

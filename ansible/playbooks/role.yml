@@ -1,0 +1,4 @@
+- name: Executando uma ROLE
+  hosts: all
+  roles:
+   - initial
