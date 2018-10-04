@@ -1,0 +1,37 @@
+- name: epel-release
+  hosts: automation
+  tasks:
+   - name: epel
+     yum:
+      name: epel-release
+
+- name: Minha Segunda Playbook
+  hosts: all
+  vars:
+   username: jair
+  tasks:   
+   - name: Criando usuarios
+     user: 
+      name: "{{username}}"
+      state: present
+
+   - name: Criando usuarios
+     user: 
+      name: "developer"
+      state: present
+
+   - name: Criando usuarios
+     user: 
+      name: "devops"
+      state: present
+
+   - name: Instalando Pacotes
+     package:
+      name:
+       - vim      
+       - htop
+       - sl
+       - cowsay
+      state: present
+      update_cache: yes
+     ignore_errors: yes

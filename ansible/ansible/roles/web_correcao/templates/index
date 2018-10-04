@@ -1,0 +1,9 @@
+<marquee>
+<h1>
+
+familia da maquina = {{ansible_os_family}}
+<br>hostname da maquina = {{ansible_hostname}}
+<br>apache debian = {{apache_debian}}
+<br>apache centos = {{apache_centos}}
+</h1>
+</marquee>
