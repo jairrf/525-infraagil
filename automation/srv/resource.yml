@@ -1,0 +1,20 @@
+devops:
+  nodename: devops
+  hostname: devops.dexter.com.br
+  osVersion: 3.10.0-693.21.1.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: Maquina com Ansible
+  osName: Linux
+  username: root
+  tags: ''
+docker:
+  nodename: docker
+  hostname: docker.dexter.com.br
+  osVersion: 3.10.0-693.21.1.el7.x86_64
+  osFamily: unix
+  osArch: amd64
+  description: Maquina com Docker
+  osName: Linux
+  username: root
+  tags: ''

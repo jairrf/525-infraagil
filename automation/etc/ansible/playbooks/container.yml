@@ -1,0 +1,4 @@
+- name: executando container
+  hosts: docker
+  roles:
+   - container
