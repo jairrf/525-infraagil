@@ -1,0 +1,25 @@
+- name: Instalando pacotes
+  yum:
+   name: "{{item}}"
+   state: present
+  with_items:
+   - httpd
+
+- name: Parando 
+  service:
+   name: firewalld
+   state: stopped
+
+- name: Iniciando 
+  service:
+   name: httpd
+   state: started
+
+- name: Configurando site
+  copy:
+   src: files/index.html 
+   dest: /var/www/html/index.html
+   owner: apache
+   group: apache
+   mode: 0644
+

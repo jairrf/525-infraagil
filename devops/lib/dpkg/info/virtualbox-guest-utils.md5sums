@@ -1,0 +1,10 @@
+49d4598b6470e092b5c8a95c5613fcd2  lib/security/pam_vbox.so
+4b13be3ebb417e3aeb1cc3e74df4d775  lib/systemd/system/virtualbox-guest-utils.service
+787c70b139120262af4719e813c0a7ce  sbin/mount.vboxsf
+e2429acd7edb89ae3c1fcac4e712f81d  usr/sbin/VBoxControl
+57f22af2962b36a899ac889b398b9202  usr/sbin/VBoxService
+0e5ac497febcf1cde018433673875b45  usr/share/doc/virtualbox-guest-utils/changelog.Debian.gz
+d73aefe5c348365928b8991d5f4d6fed  usr/share/doc/virtualbox-guest-utils/copyright
+da8841e6fb518aa9508acb28bce3ccbc  usr/share/man/man8/VBoxControl.8.gz
+a4e3f2b3869afbb37ecac5078681e62a  usr/share/man/man8/VBoxService.8.gz
+86366ea606a5c0efc8d29457e171a670  usr/share/man/man8/mount.vboxsf.8.gz

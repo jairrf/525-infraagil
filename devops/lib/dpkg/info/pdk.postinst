@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Set up any specific permissions needed...
+ chmod '0755' '/opt/puppetlabs/pdk/bin/pdk'
+ chmod '0644' '/opt/puppetlabs/pdk/share/cache/pe_versions.json'
+ chmod '0644' '/opt/puppetlabs/pdk/share/cache/task.json'
+
+# Run trigger scripts on install if defined
+if [ $1 = triggered ] && [ -z $2 ]; then
+: # no trigger scripts provided
+fi
+
+# Run trigger scripts on upgrade if defined
+if [ $1 = triggered ]&& [ -n $2 ]; then
+: # no trigger scripts provided
+fi
+
+# Run postinstall scripts on install if defined
+if [ $1 = configure ] && [ -z $2 ] ; then
+ : no postinstall scripts provided
+fi
+
+# Run postinstall scripts on upgrade if defined
+if [ $1 = configure ] && [ -n $2 ] ; then
+ : no postinstall scripts provided
+fi

@@ -1,0 +1,13 @@
+---
+# tasks file for initial
+
+- name: Usuarios Padrao
+  include: user.yml
+
+- name: Pacotes Debian
+  include: debian.yml
+  when: ansible_os_family == "Debian" 
+
+- name: Pacotes Centos
+  include: centos.yml
+  when: ansible_os_family == "RedHat" 

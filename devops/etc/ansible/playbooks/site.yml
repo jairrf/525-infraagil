@@ -1,0 +1,8 @@
+- name: enviando o meu site
+  hosts: docker
+  tasks:
+   - name: Enviando meu site
+     git:
+      repo: "http://devops.dexter.com.br/root/webhook.git"
+      dest: /srv/
+      

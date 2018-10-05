@@ -1,0 +1,6 @@
+{
+ "v1": {
+  "datasource": "DataSourceNoCloud [seed=/dev/sdb][dsmode=net]",
+  "errors": []
+ }
+}

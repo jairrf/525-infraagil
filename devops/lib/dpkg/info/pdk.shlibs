@@ -1,0 +1,14 @@
+libaugeas 0 pdk
+libcrypto 1.0.0 pdk
+libcurl 4 pdk
+libexslt 0 pdk
+libfa 1 pdk
+libgcc_s 1 pdk
+libssl 1.0.0 pdk
+libssp 0 pdk
+libstdc++ 6 pdk
+libxml2 2 pdk
+libxslt 1 pdk
+libruby 2.1 pdk
+libruby 2.4 pdk
+libffi 7 pdk

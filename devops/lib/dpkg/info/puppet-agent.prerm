@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Run pre-removal scripts on upgrade if defined
+if [ $1 = upgrade ] && [ -n $2 ] ; then
+ : no preremove scripts provided
+fi
+
+# Run pre-removal scripts on removal if defined
+if [ $1 = remove ] && [ -z $2 ] ; then
+ : no preremove scripts provided
+fi
+
+ # switch based on systemd vs systemv
+ #
+if [ "$1" = remove ]; then
+ systemctl --no-reload disable puppet.service > /dev/null 2>&1 || :
+ systemctl stop puppet.service > /dev/null 2>&1 || :
+fi
+
+ # switch based on systemd vs systemv
+ #
+if [ "$1" = remove ]; then
+ systemctl --no-reload disable mcollective.service > /dev/null 2>&1 || :
+ systemctl stop mcollective.service > /dev/null 2>&1 || :
+fi
+
+ # switch based on systemd vs systemv
+ #
+if [ "$1" = remove ]; then
+ systemctl --no-reload disable pxp-agent.service > /dev/null 2>&1 || :
+ systemctl stop pxp-agent.service > /dev/null 2>&1 || :
+fi
+

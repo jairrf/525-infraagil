@@ -1,0 +1,84 @@
+#!/bin/bash
+ # switch based on systemd vs systemv
+ #
+if [ -z "$2" ]; then
+ systemctl enable puppet.service >/dev/null || :
+else
+ systemctl try-restart puppet.service >/dev/null || :
+fi
+ # switch based on systemd vs systemv
+ #
+if [ -z "$2" ]; then
+ systemctl enable mcollective.service >/dev/null || :
+else
+ systemctl try-restart mcollective.service >/dev/null || :
+fi
+ # switch based on systemd vs systemv
+ #
+if [ -z "$2" ]; then
+ systemctl enable pxp-agent.service >/dev/null || :
+else
+ systemctl try-restart pxp-agent.service >/dev/null || :
+fi
+
+# Set up any specific permissions needed...
+ chmod '0750' '/opt/puppetlabs/puppet/cache'
+ chmod '0750' '/var/log/puppetlabs/puppet'
+ chmod '0750' '/var/log/puppetlabs/mcollective'
+ chmod '0755' '/etc/puppetlabs/pxp-agent/modules'
+ chmod '0750' '/opt/puppetlabs/pxp-agent/spool'
+ chmod '0750' '/opt/puppetlabs/pxp-agent/tasks-cache'
+ chmod '0750' '/var/log/puppetlabs/pxp-agent'
+ chmod '0644' '/usr/lib/tmpfiles.d/puppet-agent.conf'
+ chmod '0644' '/opt/puppetlabs/puppet/share/vim/puppet-vimfiles/ftdetect/puppet.vim'
+ chmod '0644' '/opt/puppetlabs/puppet/share/vim/puppet-vimfiles/ftplugin/puppet.vim'
+ chmod '0644' '/opt/puppetlabs/puppet/share/vim/puppet-vimfiles/indent/puppet.vim'
+ chmod '0644' '/opt/puppetlabs/puppet/share/vim/puppet-vimfiles/syntax/puppet.vim'
+ chmod '0644' '/etc/puppetlabs/code/environments/production/environment.conf'
+ chmod '0644' '/etc/logrotate.d/pxp-agent'
+ chmod '0644' '/lib/systemd/system/puppet.service'
+ chmod '0644' '/opt/puppetlabs/puppet/lib/ruby/gems/2.4.0/specifications/puppet.gemspec'
+ chmod '0644' '/opt/puppetlabs/puppet/lib/ruby/gems/2.4.0/specifications/facter.gemspec'
+ chmod '0644' '/opt/puppetlabs/puppet/lib/ruby/gems/2.4.0/specifications/hiera.gemspec'
+ chmod '0644' '/lib/systemd/system/mcollective.service'
+ chmod '0644' '/lib/systemd/system/pxp-agent.service'
+ chmod '0644' '/etc/profile.d/puppet-agent.sh'
+ chmod '0644' '/etc/profile.d/puppet-agent.csh'
+ chmod '0755' '/opt/puppetlabs/puppet/bin/wrapper.sh'
+
+# Run trigger scripts on install if defined
+if [ $1 = triggered ] && [ -z $2 ]; then
+: # no trigger scripts provided
+fi
+
+# Run trigger scripts on upgrade if defined
+if [ $1 = triggered ]&& [ -n $2 ]; then
+: # no trigger scripts provided
+fi
+
+# Run postinstall scripts on install if defined
+if [ $1 = configure ] && [ -z $2 ] ; then
+ systemctl disable pxp-agent.service >/dev/null || :
+fi
+
+# Run postinstall scripts on upgrade if defined
+if [ $1 = configure ] && [ -n $2 ] ; then
+ # Remove any extra hiera config files we laid down if prev config present
+if [ -e /etc/puppetlabs/puppet/remove_hiera5_files.rm ]; then
+ rm -f /etc/puppetlabs/puppet/hiera.yaml
+ rm -f /etc/puppetlabs/code/environments/production/hiera.yaml
+ rm -f /etc/puppetlabs/puppet/remove_hiera5_files.rm
+fi
+
+# Restore the old hiera, if it existed
+if [ -e /etc/puppetlabs/code/hiera.yaml.pkg-old ]; then
+ mv /etc/puppetlabs/code/hiera.yaml{.pkg-old,}
+fi
+if [ -e /etc/puppetlabs/puppet/hiera.yaml.pkg-old ]; then
+ mv /etc/puppetlabs/puppet/hiera.yaml{.pkg-old,}
+fi
+if [ -e /etc/puppetlabs/code/environments/production/hiera.yaml.pkg-old ]; then
+ mv /etc/puppetlabs/code/environments/production/hiera.yaml{.pkg-old,}
+fi
+
+fi

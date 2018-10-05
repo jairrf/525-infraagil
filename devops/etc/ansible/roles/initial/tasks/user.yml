@@ -1,0 +1,9 @@
+- name: Criando usuarios Padrao
+  user:
+   name: "{{item.nome}}"
+   password: "{{item.senha}}"
+   home: "/srv/{{item.nome}}"
+  with_items:
+   - {nome: jair, senha: '$1$Nu5TJudI$q9Wp6tm/cdNVmcwIYsjFp/' }
+   - {nome: developer, senha: '$1$Nu5TJudI$q9Wp6tm/cdNVmcwIYsjFp/' }
+   - {nome: devops, senha: '4linux' }

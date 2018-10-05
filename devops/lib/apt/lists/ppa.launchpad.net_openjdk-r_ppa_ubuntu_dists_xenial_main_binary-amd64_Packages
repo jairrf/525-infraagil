@@ -1,0 +1,740 @@
+Package: openjdk-7-jdk
+Source: openjdk-7
+Priority: optional
+Section: java
+Installed-Size: 20390
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Recommends: libxt-dev
+Suggests: openjdk-7-demo, openjdk-7-source, visualvm
+Provides: java-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-sdk
+Depends: openjdk-7-jre (= 7u95-2.6.4-3), libc6 (>= 2.2.5)
+Filename: pool/main/o/openjdk-7/openjdk-7-jdk_7u95-2.6.4-3_amd64.deb
+Size: 16293296
+MD5sum: 71519a3e27caefc1af8ae701bcc5b9f9
+SHA1: b014eb248ec861fe4401c74003950477d8368e8f
+SHA256: fab0a55fab24e254c37196267b0d9300858519b5c73734a3853c513906df5fab
+Description: OpenJDK Development Kit (JDK)
+Description-md5: eaff50443f15582a8beb0901034b62cf
+Multi-Arch: same
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-jre-headless
+Source: openjdk-7
+Priority: optional
+Section: java
+Installed-Size: 54983
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Replaces: openjdk-7-jre-lib (<< 7u45-2.4.3-1)
+Suggests: icedtea-7-jre-jamvm (= 7u95-2.6.4-3), libnss-mdns, sun-java6-fonts, fonts-dejavu-extra, fonts-ipafont-gothic, fonts-ipafont-mincho, ttf-wqy-microhei | ttf-wqy-zenhei, fonts-indic
+Provides: java-runtime-headless, java2-runtime-headless, java5-runtime-headless, java6-runtime-headless, java7-runtime-headless
+Depends: ca-certificates-java, java-common (>= 0.28), libcups2 (>= 1.4.0), liblcms2-2 (>= 2.2+git20110628), libjpeg8 (>= 8c), libnss3 (>= 2:3.17.1), util-linux (>= 2.26.2-4), libc6 (>= 2.14), libfontconfig1 (>= 2.11.1), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.26.0), libkrb5-3 (>= 1.6.dfsg.2), libpcsclite1 (>= 1.3.0), libpulse0 (>= 0.99.1), libsctp1 (>= 1.0.10+dfsg), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Conflicts: icedtea-netx (<< 1.1.1-2~)
+Pre-Depends: multiarch-support
+Breaks: icedtea-netx (<< 1.4-2)
+Filename: pool/main/o/openjdk-7/openjdk-7-jre-headless_7u95-2.6.4-3_amd64.deb
+Size: 39394994
+MD5sum: f2aa04b3bb2ac9b6dd603ca85afd03a8
+SHA1: 249f6616ef625f93d47d9f84be50d8c17b3f9c63
+SHA256: 7942120b56752336d6540610f2cc3e4f5733704191c3ea3694f8186a47068c97
+Description: OpenJDK Java runtime, using Hotspot JIT (headless)
+Description-md5: 20eb08d56f9496cba7ae5bc1fc762f93
+Built-Using: rhino (= 1.7R4-3)
+Multi-Arch: same
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-jre
+Source: openjdk-7
+Priority: optional
+Section: java
+Installed-Size: 551
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Recommends: libgnome-2-0, libgnomevfs2-0, libgconf-2-4, fonts-dejavu-extra
+Replaces: openjdk-7-jre-headless (<< 7u65-2.5.1-0~)
+Suggests: icedtea-7-plugin
+Provides: java-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime
+Depends: openjdk-7-jre-headless (= 7u95-2.6.4-3), libasound2 (>= 1.0.16), libc6 (>= 2.14), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.11.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libjpeg8 (>= 8c), libpango-1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6, libxi6, libxrender1, libxtst6, libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2)
+Conflicts: icedtea-gcjwebplugin (<< 1.0-1ubuntu4)
+Filename: pool/main/o/openjdk-7/openjdk-7-jre_7u95-2.6.4-3_amd64.deb
+Size: 173370
+MD5sum: a29fb90487c578f2fdd0032f6cd720b8
+SHA1: fec4f14643996a12ac809a8b595c1546547df9b2
+SHA256: b7811ce0a2049bc313c8d1c39ad3e490104205346520c8de86ed062ce9ca0c7c
+Description: OpenJDK Java runtime, using Hotspot JIT
+Description-md5: adca808a02a80aed4051cc95b7fe5f37
+Multi-Arch: same
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-demo
+Source: openjdk-7
+Priority: extra
+Section: java
+Installed-Size: 4071
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Depends: openjdk-7-jre (= 7u95-2.6.4-3), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.1.1)
+Filename: pool/main/o/openjdk-7/openjdk-7-demo_7u95-2.6.4-3_amd64.deb
+Size: 1885960
+MD5sum: 6d37223303e73d0e1e66d1141be88d1b
+SHA1: 74c4a69e28c293cb39532c42a335f64d69b9be66
+SHA256: 7114e87c11a8429b3fa131db422957d94e7be0f0d0203cc811bcce9592fd3f4f
+Description: Java runtime based on OpenJDK (demos and examples)
+Description-md5: c2a5624aa60e4de3025a249886fa82d7
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-dbg
+Source: openjdk-7
+Priority: extra
+Section: debug
+Installed-Size: 195482
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Recommends: openjdk-7-jre (= 7u95-2.6.4-3)
+Suggests: openjdk-7-jdk (= 7u95-2.6.4-3)
+Depends: openjdk-7-jre-headless (= 7u95-2.6.4-3)
+Filename: pool/main/o/openjdk-7/openjdk-7-dbg_7u95-2.6.4-3_amd64.deb
+Size: 174799916
+MD5sum: 2164803e6064572ed696e95f9b88a247
+SHA1: 1f8f288e0d0d75c834530e8ff10a1da84fb36723
+SHA256: 39d2657c533e95f04252c0bb1d0a6c3adf22202124876d95420115aa3fc7200b
+Description: Java runtime based on OpenJDK (debugging symbols)
+Description-md5: 62cbbd2d3e6bc94279f18db4f735142b
+Multi-Arch: same
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-jre-lib
+Source: openjdk-7
+Priority: optional
+Section: java
+Installed-Size: 209
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 7u95-2.6.4-3
+Breaks: openjdk-7-jre-headless (<< 7u45-2.4.3-1)
+Filename: pool/main/o/openjdk-7/openjdk-7-jre-lib_7u95-2.6.4-3_all.deb
+Size: 34210
+MD5sum: 6cc5f20ddeb353f9ad0b845edead5fce
+SHA1: 16bb043299a3537ca3934ad2ff1bdf122c635a98
+SHA256: 178996892d61bef7304c09e0591cdecb2ee0163780afcc6c3a91eb6a0ffe564e
+Description: OpenJDK Java runtime (architecture independent libraries)
+Description-md5: bebecf68d1d68be6a49b7acfed74f186
+Multi-Arch: foreign
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-source
+Source: openjdk-7
+Priority: extra
+Section: java
+Installed-Size: 43763
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 7u95-2.6.4-3
+Replaces: openjdk-7-jdk (<< 7u65-2.5.1-4)
+Depends: openjdk-7-jre (>= 7u95-2.6.4-3), openjdk-7-jdk (>= 7u95-2.6.4-3)
+Filename: pool/main/o/openjdk-7/openjdk-7-source_7u95-2.6.4-3_all.deb
+Size: 40017596
+MD5sum: 46c45f7bd1ba7bc82e6f6e79a0e8adeb
+SHA1: dbb8750d653c20ac693593e261a3c6f24a851add
+SHA256: 23db326fbe6bf49ac6a78bd04994a30895a7e5103f38c21165cf1935cb2d28e6
+Description: OpenJDK Development Kit (JDK) source files
+Description-md5: 328263bb6fbf81f04f5d459d67244ea0
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-doc
+Source: openjdk-7
+Priority: extra
+Section: doc
+Installed-Size: 244058
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 7u95-2.6.4-3
+Suggests: openjdk-7-jdk
+Filename: pool/main/o/openjdk-7/openjdk-7-doc_7u95-2.6.4-3_all.deb
+Size: 10938760
+MD5sum: c481103ad09943c1791c1374c4727084
+SHA1: b9f8abe848497c34eed08f0f0919931b6377f054
+SHA256: 515d887d3cc97f219cd09e5389c796567ceb66b347d692487ec76345478e7f69
+Description: OpenJDK Development Kit (JDK) documentation
+Description-md5: c1aebd5e8058a6cce0d5690571eddb7b
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-7-jre-zero
+Source: openjdk-7
+Priority: extra
+Section: java
+Installed-Size: 5856
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Depends: openjdk-7-jre-headless (= 7u95-2.6.4-3), libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Filename: pool/main/o/openjdk-7/openjdk-7-jre-zero_7u95-2.6.4-3_amd64.deb
+Size: 1782638
+MD5sum: d3eebab766d6dd855e24be4336f64574
+SHA1: acda05b9e280a7be84e1880721a17d2c12338cea
+SHA256: a11edee77e9682444786b0f780804e19989cefc4ee1fd9e6b333f4ba3e670771
+Description: Alternative JVM for OpenJDK, using Zero/Shark
+Description-md5: ca0db1fb38a237b982a1de5e6d632720
+Multi-Arch: same
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: icedtea-7-jre-jamvm
+Source: openjdk-7
+Priority: extra
+Section: java
+Installed-Size: 1795
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 7u95-2.6.4-3
+Depends: openjdk-7-jre-headless (= 7u95-2.6.4-3), libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Filename: pool/main/o/openjdk-7/icedtea-7-jre-jamvm_7u95-2.6.4-3_amd64.deb
+Size: 428330
+MD5sum: e8efa784633e81e9db3c89290f69c348
+SHA1: b873231d15c64eb341d3427a70e4d1dad3d75323
+SHA256: b98ff641aa9a019716a715da90d381d189407b0ec6aa41c447ba11686af8a375
+Description: Alternative JVM for OpenJDK, using JamVM
+Description-md5: a3b67c2c3683232269f84a02ede3fd4b
+Multi-Arch: same
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: jtreg
+Priority: optional
+Section: java
+Installed-Size: 666
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 4.2-b10-1~16.04.1
+Recommends: testng
+Depends: javahelp2, libjtharness-java, libxalan2-java
+Filename: pool/main/j/jtreg/jtreg_4.2-b10-1~16.04.1_all.deb
+Size: 559120
+MD5sum: fb125579f79edab9090b7db88874156e
+SHA1: 27705499679136e881f7acb19d3c1acc3ff24131
+SHA256: cf11f16fb5d3e1692f0b6654cfb9ff45a5c18bd7d948333330dc471b3bcf6022
+Description: Regression Test Harness for the OpenJDK platform
+Description-md5: 611519f9a173fc2ad95de16a2d1a0c04
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+
+Package: openjdk-9-jdk
+Source: openjdk-9
+Priority: optional
+Section: java
+Installed-Size: 68
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Recommends: libxt-dev
+Replaces: openjdk-9-jdk-headless (<< 9~b115-3)
+Suggests: openjdk-9-demo, openjdk-9-source, visualvm
+Provides: java-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-sdk, java8-sdk
+Depends: openjdk-9-jre (= 9.0.4+12-4ubuntu2~16.04.4), openjdk-9-jdk-headless (= 9.0.4+12-4ubuntu2~16.04.4), libc6 (>= 2.2.5)
+Filename: pool/main/o/openjdk-9/openjdk-9-jdk_9.0.4+12-4ubuntu2~16.04.4_amd64.deb
+Size: 17606
+MD5sum: 7f18431a55d8b67c649a913de23471c9
+SHA1: 33e6d1e150854652d24f613e94937e370ccbc485
+SHA256: dcd2ff00ffafbdad57bb34e6b55abeaecf182b4715d9e74d2e1023c895100660
+Description: OpenJDK Development Kit (JDK)
+Description-md5: b9e7f4837238c34971e4a8b72ab7d045
+Multi-Arch: same
+
+Package: openjdk-9-jre-headless
+Source: openjdk-9
+Priority: optional
+Section: java
+Installed-Size: 179385
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Suggests: libnss-mdns, fonts-dejavu-extra, fonts-ipafont-gothic, fonts-ipafont-mincho, fonts-wqy-microhei | fonts-wqy-zenhei, fonts-indic
+Provides: java-runtime-headless, java2-runtime-headless, java5-runtime-headless, java6-runtime-headless, java7-runtime-headless, java8-runtime-headless, java9-runtime-headless
+Depends: ca-certificates-java, java-common (>= 0.28), libcups2, liblcms2-2 (>= 2.2+git20110628), libjpeg8 (>= 8c), libnss3 (>= 2:3.17.1), util-linux (>= 2.26.2-4), libc6 (>= 2.14), libelf1 (>= 0.131), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.4), libpcsclite1 (>= 1.3.0), libstdc++6 (>= 4.1.1), libx11-6, libxext6, libxi6, libxrender1, libxtst6, zlib1g (>= 1:1.1.4)
+Conflicts: oracle-java9-installer
+Filename: pool/main/o/openjdk-9/openjdk-9-jre-headless_9.0.4+12-4ubuntu2~16.04.4_amd64.deb
+Size: 38873214
+MD5sum: 8bcc9c984204dee676c8d4053bc5ff4f
+SHA1: df01d0b26fd7b171166c55502a709c24f44db9d1
+SHA256: 6835c045610b927afaba744ebb20ab6de141fc1b1a6ce3b07c692570630e9198
+Description: OpenJDK Java runtime, using Hotspot JIT (headless)
+Description-md5: 62c2c9689e617c48cc4480926d2ca785
+Multi-Arch: same
+
+Package: openjdk-9-jre
+Source: openjdk-9
+Priority: optional
+Section: java
+Installed-Size: 173
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Recommends: fonts-dejavu-extra
+Replaces: openjdk-9-jre-headless (<< 8u20~b20-3)
+Suggests: icedtea-8-plugin
+Provides: java-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime, java8-runtime, java9-runtime
+Depends: openjdk-9-jre-headless (= 9.0.4+12-4ubuntu2~16.04.4), libglib2.0-0 (>= 2.24), libgtk-3-0, libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2), libasound2 (>= 1.0.16), libc6 (>= 2.14), libgif7 (>= 5.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6
+Filename: pool/main/o/openjdk-9/openjdk-9-jre_9.0.4+12-4ubuntu2~16.04.4_amd64.deb
+Size: 53230
+MD5sum: 3feea6d34ac64644361e332e94717c6b
+SHA1: 76a20b992925b665e6a03109e4aaa51af47dd861
+SHA256: be614050a68f41143ada26ed70ebcdca87eacb1a05c3fcad933d5ed323ad996b
+Description: OpenJDK Java runtime, using Hotspot JIT
+Description-md5: 13097853553de1ab39cc189225a9cbaa
+Multi-Arch: same
+
+Package: openjdk-9-demo
+Source: openjdk-9
+Priority: optional
+Section: java
+Installed-Size: 1334
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Depends: openjdk-9-jre (= 9.0.4+12-4ubuntu2~16.04.4)
+Filename: pool/main/o/openjdk-9/openjdk-9-demo_9.0.4+12-4ubuntu2~16.04.4_amd64.deb
+Size: 516206
+MD5sum: 447be0f92f1256f170bbb857395bf891
+SHA1: 14d1573bea7f8a293f06492b9f3ba9b1ed0ad726
+SHA256: 3472abbb850a70d0225563ce8a098f86a0ad29be4a9ebdc9aaeeebbed9861978
+Description: Java runtime based on OpenJDK (demos and examples)
+Description-md5: 8c587e17f25fb354ef51e27e56507756
+
+Package: openjdk-9-dbg
+Source: openjdk-9
+Priority: optional
+Section: debug
+Installed-Size: 89741
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Recommends: openjdk-9-jre (= 9.0.4+12-4ubuntu2~16.04.4)
+Suggests: openjdk-9-jdk (= 9.0.4+12-4ubuntu2~16.04.4)
+Depends: openjdk-9-jre-headless (= 9.0.4+12-4ubuntu2~16.04.4)
+Filename: pool/main/o/openjdk-9/openjdk-9-dbg_9.0.4+12-4ubuntu2~16.04.4_amd64.deb
+Size: 87396162
+MD5sum: 0fed2b51d56b4cd83c94b614129c9155
+SHA1: 9a61012701b0a2da3fcc5c364dbca44652729f26
+SHA256: 3ad24b4e76a25b36a7ed1fda14bbf7e7f0a87b98264c956cb481250d59f01c28
+Description: Java runtime based on OpenJDK (debugging symbols)
+Description-md5: d73cb0a41450fd194ce774f2b26510b8
+Build-Ids: 00ddbbebffdc765f632ff7d81c2246fb18fb210f 1d0063441d4b6dda81cb48c27af33f3438aae728 24305507380371afee5c667a8c51ccca85df1e66 28547b49f93fb0fdf9e413002044bc4174a11aeb 32bb2688ff5e750bd868332f7ab3a3c233625e7f 343d06f8ba8132c2bdeb79c3760da0e87a1c6b04 3bb4e6287d33c778c70a8b14c14309524b32ebd7 3c20c65b8e12f61d52028f9844f845ab68b78854 3fe561bb47c96216a591a7b9cda8461602ca3354 42ff7fa69fe42884973c8e17bbffabcfacd8ea81 437befd909838a38f915fe4e30f5d431634afe5d 522b71d06d6b67bfceb97a564d15ad9605873ab8 6366756563ea89ff9e4030765392f068be85cb4b 675657b21a81089eec76b2f55d7d647acd782b3c 6a14d4ae9d083668fb21cd0a31269f3ba7f300b1 6c3a4a5daacf0b47cceba3f11f5a7003c48dd25d 82bb917101298e7fe067ddb3030c92219b678a9b 967f74c49e435cb479c5a4e4c154a7acadc035a3 9c6d31e9caf09db5207f8799ada1720856f5a307 a267a1649fdc944efe7e1ca90c11d965dc6e5f17 a438290e95dbdde4026a22c7f8f0b31102dd4327 af6926d57857569b204c5fa5d1d3692f8aac3ac3 c99e19bd29fab676232f633e714fe3ce91fdcbf0 c9ab5a67572700b3b1ce0fa8d2099df66ac8b13a cb585d192528acc13f41e87ec55d1cdba38153ae cde50cd66b368cbf2dda219756ee126cc88f3a91 d45e8a2f4af0bdc265bb970972a88e958dc0ed23 ef7a512bfa2446e4cf6d67838e49662781ff82d0 f1827cd16f242c2e4fc3f0fb0caf217148ab5876 f31a60822351b3f4042debd2808f8e42c602dac9 f689f15fdf5ed11435179ba665b173c28581dde8
+Multi-Arch: same
+
+Package: openjdk-9-source
+Source: openjdk-9
+Priority: optional
+Section: java
+Installed-Size: 65087
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Replaces: openjdk-8-jdk (<< 8u20~b26-1~)
+Depends: openjdk-9-jre (>= 9.0.4+12-4ubuntu2~16.04.4), openjdk-9-jdk (>= 9.0.4+12-4ubuntu2~16.04.4)
+Filename: pool/main/o/openjdk-9/openjdk-9-source_9.0.4+12-4ubuntu2~16.04.4_all.deb
+Size: 57933652
+MD5sum: 22b8fc2d6473e3b2045f4a2e136ae65f
+SHA1: a8bf4df3a628cac5a792f66fa39bbf42ff3424a4
+SHA256: 6e88b140d1dd251e92ba07ff28b0c56e5f5cc05bab52d6bef572521fae20a85f
+Description: OpenJDK Development Kit (JDK) source files
+Description-md5: 5e4d8bbb398daa24b05478a4a3be42bf
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-9-doc
+Source: openjdk-9
+Priority: optional
+Section: doc
+Installed-Size: 330911
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Suggests: openjdk-9-jdk
+Filename: pool/main/o/openjdk-9/openjdk-9-doc_9.0.4+12-4ubuntu2~16.04.4_all.deb
+Size: 15098438
+MD5sum: 9fcddf2f09a85e218b0664391b702c8d
+SHA1: 404ed0cca34c4025d367ab7ca4e44f9904769b12
+SHA256: 8d3a2acd3fd0748ffae2d13a14684c545a1b42b50722e2ff01b0c1299ff42be2
+Description: OpenJDK Development Kit (JDK) documentation
+Description-md5: 4689d9c1e14d405d15f0710639599643
+Multi-Arch: foreign
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-9-jdk-headless
+Source: openjdk-9
+Priority: optional
+Section: java
+Installed-Size: 85811
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 9.0.4+12-4ubuntu2~16.04.4
+Replaces: openjdk-9-jdk (<< 9~b107-0~), openjdk-9-jre-headless (<< 9.0.1+11-1~)
+Suggests: openjdk-9-demo, openjdk-9-source
+Provides: java-compiler, java-sdk-headless, java2-sdk-headless, java5-sdk-headless, java6-sdk-headless, java7-sdk-headless, java8-sdk-headless, java9-sdk-headless
+Depends: openjdk-9-jre-headless (= 9.0.4+12-4ubuntu2~16.04.4), libc6 (>= 2.2.5)
+Breaks: openjdk-9-jre-headless (<< 9.0.1+11-1~)
+Filename: pool/main/o/openjdk-9/openjdk-9-jdk-headless_9.0.4+12-4ubuntu2~16.04.4_amd64.deb
+Size: 77785094
+MD5sum: 206ec8fea6c3c345346a3e4780a1f056
+SHA1: b526c3f8c5381bdcfebd381ffc57bc322c6859ec
+SHA256: 674ebd654891025c160d9d7cd567119b8cda1c0b8a40ab63eab754ddb3d73d31
+Description: OpenJDK Development Kit (JDK) (headless)
+Description-md5: 494a52f34d707a832270d6d51a78f511
+Multi-Arch: same
+
+Package: openjdk-10-dbg
+Source: openjdk-10
+Priority: optional
+Section: debug
+Installed-Size: 168260
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Recommends: openjdk-10-jre (= 10.0.2+13-1~16.04.6)
+Suggests: openjdk-10-jdk (= 10.0.2+13-1~16.04.6)
+Depends: openjdk-10-jre-headless (= 10.0.2+13-1~16.04.6)
+Filename: pool/main/o/openjdk-10/openjdk-10-dbg_10.0.2+13-1~16.04.6_amd64.deb
+Size: 165694340
+MD5sum: 95b24d65491ab6ed67863706481ac0a3
+SHA1: 27dfd88842cb75c6f99b4b22c9bb1568a64fbda7
+SHA256: 237618e212059e94c716807c57299c2ba487b74758138d6d110d5e3eaf744fe7
+Description: Java runtime based on OpenJDK (debugging symbols)
+Description-md5: d73cb0a41450fd194ce774f2b26510b8
+Build-Ids: 0786c2611f4f43ae83d1287a95247d3f7f1b8076 169a96f203f34341a35a5fd51d6c960151023362 27e3f6d6ce0d4bcdad7b2be8e675cbb3665547e4 2cb09e6206e2dde867a74e56deb0c2f0f0d3e2d3 42349de00ba5ccad96aec60e9c12cc5a99f95db0 58578e056d1776e4a39c3746b5dc62d248ac0670 5e07730f0eb8ae4ada1d1c237ffd8234cd34f244 62b6369015e5ed05742290caa0a4971744c6066e 685541722896ad9690eca3a421667570bbacdfd8 7c31bc9ddc4ab705e332bac1208ee876d6b62bab 7d4267a2bf008ab64201e8f20b0e0422fab73df6 809e2de34cdc62b24115e3e665fcf21416c6f53f 89303b12513dcdf326779c6cb04777bdab0924cc 8e1eeebb26d5181ef535b3e5a91af89448c571dc ae2da322bc90198778755e81c1f2d0702c6df6f5 b910342a710698cdcede31f3989ad0046aab307f b9acb6dc7f036809668ce957e5194051d78aa835 bad3439a04ad92ca330a6ec88eb7177f5a73d147 c7eb3dfb0a758d314826474378755af07287bf9b c984840804cd63848f69b10bb8439485e6609788 cdaf73ae2faabbf25ccb6dfb4878dbb02e1b92ef ded9c8216e2aa876e70fae8e3d706e58370de223 e7c456149e67156f1bc0e3e078e4ffccebef9977 edf11a400411dd17960f61d4ed860e75d05dc4f2 f0adf4cdbf0faf28439f0cff77ff1d4e34802148 fa2e6a6208796f1d186889a9ac67dafa9dd1f4aa fb0bd6821431b82d22554db4c0d7d0160e66815a fc9b56ad0a7f95a1d1e026be3acb71f06e89b2b7 fdba581af8c0c50f37a352e912583f8ba5f6c657
+Multi-Arch: same
+
+Package: openjdk-10-demo
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 1334
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Depends: openjdk-10-jre (= 10.0.2+13-1~16.04.6)
+Filename: pool/main/o/openjdk-10/openjdk-10-demo_10.0.2+13-1~16.04.6_amd64.deb
+Size: 516122
+MD5sum: 7b1a574f0603ef7437b520cda9c7a4e0
+SHA1: 7b16168b1a41e18338e631ca1ea84e457ecdfa27
+SHA256: a19de9ae1e902f93e9fb7cba7abd702cac5bd5df426078d862613a3f4a2c0f74
+Description: Java runtime based on OpenJDK (demos and examples)
+Description-md5: 8c587e17f25fb354ef51e27e56507756
+
+Package: openjdk-10-jdk-headless
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 175209
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Suggests: openjdk-10-demo, openjdk-10-source
+Provides: java-compiler, java-sdk-headless, java10-sdk-headless, java2-sdk-headless, java5-sdk-headless, java6-sdk-headless, java7-sdk-headless, java8-sdk-headless, java9-sdk-headless
+Depends: openjdk-10-jre-headless (= 10.0.2+13-1~16.04.6), libc6 (>= 2.2.5)
+Filename: pool/main/o/openjdk-10/openjdk-10-jdk-headless_10.0.2+13-1~16.04.6_amd64.deb
+Size: 169275886
+MD5sum: c210b4d43d4bc1764f0ae95456121aad
+SHA1: 9cf2320d8816a9675a74f382983f592e1995039a
+SHA256: 0cd282e1e4814104970da032784b4bea5d23ef44fd8394c1caeb9ec06b9adb8e
+Description: OpenJDK Development Kit (JDK) (headless)
+Description-md5: 494a52f34d707a832270d6d51a78f511
+Multi-Arch: same
+
+Package: openjdk-10-jdk
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 68
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Recommends: libxt-dev
+Suggests: openjdk-10-demo, openjdk-10-source, visualvm
+Provides: java-compiler, java-sdk, java10-sdk, java2-sdk, java5-sdk, java6-sdk, java7-sdk, java8-sdk, java9-sdk
+Depends: openjdk-10-jre (= 10.0.2+13-1~16.04.6), openjdk-10-jdk-headless (= 10.0.2+13-1~16.04.6), libc6 (>= 2.2.5)
+Filename: pool/main/o/openjdk-10/openjdk-10-jdk_10.0.2+13-1~16.04.6_amd64.deb
+Size: 17628
+MD5sum: b99f8bdb44bb1c01a8af681881860e14
+SHA1: 12504b6fa3c78854cbce012e01db28067386afd2
+SHA256: b414b70526fb99498b92398c0b5f89301f3ed838bf38f2419045dce0f11aaeb2
+Description: OpenJDK Development Kit (JDK)
+Description-md5: b9e7f4837238c34971e4a8b72ab7d045
+Multi-Arch: same
+
+Package: openjdk-10-jre-headless
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 178719
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Suggests: libnss-mdns, fonts-dejavu-extra, fonts-ipafont-gothic, fonts-ipafont-mincho, fonts-wqy-microhei | fonts-wqy-zenhei, fonts-indic
+Provides: java-runtime-headless, java10-runtime-headless, java2-runtime-headless, java5-runtime-headless, java6-runtime-headless, java7-runtime-headless, java8-runtime-headless, java9-runtime-headless
+Depends: ca-certificates-java, java-common (>= 0.28), libcups2, liblcms2-2 (>= 2.2+git20110628), libjpeg8 (>= 8c), libfontconfig1, libnss3 (>= 2:3.17.1), util-linux (>= 2.26.2-4), libc6 (>= 2.14), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.4), libpcsclite1 (>= 1.3.0), libstdc++6 (>= 4.1.1), libx11-6, libxext6, libxi6, libxrender1, libxtst6, zlib1g (>= 1:1.1.4)
+Conflicts: oracle-java10-installer
+Filename: pool/main/o/openjdk-10/openjdk-10-jre-headless_10.0.2+13-1~16.04.6_amd64.deb
+Size: 38999304
+MD5sum: 5d199dd602c13131a6c414909e415203
+SHA1: c9bd3d098182c85e4085f59d9da50eac94a64594
+SHA256: f7c9ce5bf159d23f0bbe620573431b4bdf6dc614617a0b14e6df8011a034b8ac
+Description: OpenJDK Java runtime, using Hotspot JIT (headless)
+Description-md5: 62c2c9689e617c48cc4480926d2ca785
+Multi-Arch: same
+
+Package: openjdk-10-jre-zero
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 7504
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Depends: openjdk-10-jre-headless (= 10.0.2+13-1~16.04.6), libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Filename: pool/main/o/openjdk-10/openjdk-10-jre-zero_10.0.2+13-1~16.04.6_amd64.deb
+Size: 2236430
+MD5sum: 9aae82635a0b93b6875ca662a47035a2
+SHA1: ee1215086986a7aa13b983276992dc5ddf5fc9e7
+SHA256: c28f1905c855c91071b1365ba61b6cbcd22c6028c025e1637b9cd346bdb67615
+Description: Alternative JVM for OpenJDK, using Zero
+Description-md5: c714861c802c9808def07d5329c6ed78
+Multi-Arch: same
+
+Package: openjdk-10-jre
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 172
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 10.0.2+13-1~16.04.6
+Recommends: fonts-dejavu-extra
+Provides: java-runtime, java10-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime, java8-runtime, java9-runtime
+Depends: openjdk-10-jre-headless (= 10.0.2+13-1~16.04.6), libglib2.0-0 (>= 2.24), libgtk-3-0, libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2), libasound2 (>= 1.0.16), libc6 (>= 2.14), libgif7 (>= 5.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6
+Filename: pool/main/o/openjdk-10/openjdk-10-jre_10.0.2+13-1~16.04.6_amd64.deb
+Size: 53068
+MD5sum: 9f9144db35e859adec838f706226beba
+SHA1: 46047a8241a28a568095fb6330f3848cd7771dc2
+SHA256: 8e8cf3e9b5d176b8dbeb8abeb0701dce29d18676e9648976e342cf3936b419de
+Description: OpenJDK Java runtime, using Hotspot JIT
+Description-md5: 13097853553de1ab39cc189225a9cbaa
+Multi-Arch: same
+
+Package: openjdk-10-doc
+Source: openjdk-10
+Priority: optional
+Section: doc
+Installed-Size: 321158
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 10.0.2+13-1~16.04.6
+Suggests: openjdk-10-jdk
+Filename: pool/main/o/openjdk-10/openjdk-10-doc_10.0.2+13-1~16.04.6_all.deb
+Size: 14769072
+MD5sum: c3ccd97f1453049d942acb7d2e9a12ab
+SHA1: 063fc801d6f56dd0407c016363125d3ce836f9ed
+SHA256: b1befd7908c1e39eeaf2581c28df8e4c88456a2f6e232f74c3cdb214de69f82f
+Description: OpenJDK Development Kit (JDK) documentation
+Description-md5: 4689d9c1e14d405d15f0710639599643
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-10-source
+Source: openjdk-10
+Priority: optional
+Section: java
+Installed-Size: 63990
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 10.0.2+13-1~16.04.6
+Depends: openjdk-10-jdk (>= 10.0.2+13-1~16.04.6)
+Filename: pool/main/o/openjdk-10/openjdk-10-source_10.0.2+13-1~16.04.6_all.deb
+Size: 57769068
+MD5sum: 0a044206c6ae595ffb99744c51df22f3
+SHA1: 9f45c30e9d069f43ac309efc0893104cdc5056fc
+SHA256: 1e9e43d01fa31b637f60b3918be096e65fce8d5836381eaef1411903bbeb0b12
+Description: OpenJDK Development Kit (JDK) source files
+Description-md5: 5e4d8bbb398daa24b05478a4a3be42bf
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-11-dbg
+Source: openjdk-11
+Priority: optional
+Section: debug
+Installed-Size: 189293
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Recommends: openjdk-11-jre (= 11~24-1~16.04.1)
+Suggests: openjdk-11-jdk (= 11~24-1~16.04.1)
+Depends: openjdk-11-jre-headless (= 11~24-1~16.04.1)
+Filename: pool/main/o/openjdk-11/openjdk-11-dbg_11~24-1~16.04.1_amd64.deb
+Size: 186007288
+MD5sum: 41c7f647a464c9efe1abb78bc5c42dea
+SHA1: e93476068428dbbf1ddfa2c9a015ba9d0c74e73e
+SHA256: 3029afc3ac908dd45cd2c0082e9e698633a4770adfa14d343145036a613ac554
+Description: Java runtime based on OpenJDK (debugging symbols)
+Description-md5: d73cb0a41450fd194ce774f2b26510b8
+Build-Ids: 053ad1c7ed93c38e4650a6efa1089494c0f6836c 0bcbc84960bf96b483cf1d7bb9509535a70cbde5 0d7f3629254b1bddb1a30c6c937308d8f8c410fe 0f27ce0e6787a516f05b0e07d4da90dfc53db644 0fba30678c4cee1c110a05aa23f28c46c587d829 17d3de165cf67c270b58431c2ebeb65015f6d0c7 28ee7b2131337055d10ee4fd8b1cc72c0bf569a5 29f7407e657bcdd5af2da444cfad91b32444206f 2b15655e0c92752068e7f20316e0bc26c62a9214 388c8c95b3393b4f9c4f18e4fbdbe31719c5f5fc 4a7f56abe98833af5445e5f9334c8b7d845db555 5152f9fc8cbe9ef12c20a0f8a687f71dadc86ead 624fc2fbcd907cb9349b50a24182be3cf0164270 74b027e1ce030b5d5fefb97b205ccc2d363feea7 7e1e0fc69360b11c7bdeb41f5a7625880b0c0e9b 8728a0dee7fb40199b0b68a71f3f6022f6e08400 bca467bb342f4531f6718acf978505975512d80b d11b45d5d7165afda6e1e51d3daca97447a91d68 d570d94fe6ab7bef641f79585e98e863b6afb83f d60c013f7bcc24a6b62cab911c6836e8ead6d726 dae716af1d88f303c3e54113b2f8f3eebf309d41 dfe884450af968d55b94c347335f42dcd72218bd e1267bc6c6760551d5f479408db3ba6eb45065e1 fa17b1acefd9bdeabdf97f4a371c60f7de159120
+Multi-Arch: same
+
+Package: openjdk-11-demo
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 5837
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Depends: openjdk-11-jre (= 11~24-1~16.04.1)
+Filename: pool/main/o/openjdk-11/openjdk-11-demo_11~24-1~16.04.1_amd64.deb
+Size: 4109450
+MD5sum: 0299f572a89e6e2cf3566d1614511263
+SHA1: 4f00f233ba8de395f4b84745d79aef167abe04cf
+SHA256: 1123b2ac9b7b5c3df0045160f5cf2a56705c0f5861b657237f0b121c609e62f8
+Description: Java runtime based on OpenJDK (demos and examples)
+Description-md5: 8c587e17f25fb354ef51e27e56507756
+
+Package: openjdk-11-jdk-headless
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 183159
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Replaces: openjdk-11-jre-headless (<< 11~19-2)
+Suggests: openjdk-11-demo, openjdk-11-source
+Provides: java-compiler, java-sdk-headless, java10-sdk-headless, java11-sdk-headless, java2-sdk-headless, java5-sdk-headless, java6-sdk-headless, java7-sdk-headless, java8-sdk-headless, java9-sdk-headless
+Depends: openjdk-11-jre-headless (= 11~24-1~16.04.1), libc6 (>= 2.2.5)
+Conflicts: openjdk-11-jre-headless (<< 11~19-2)
+Filename: pool/main/o/openjdk-11/openjdk-11-jdk-headless_11~24-1~16.04.1_amd64.deb
+Size: 178074218
+MD5sum: de1abd1ec69df0e8da58eb4beb748160
+SHA1: c62ba8b041b613f62d73879597c7156aa3bb4b4e
+SHA256: 33b1bc15dd5bc670ab1d2136c6e998ae916be72daac440631cb9477829c3a8c8
+Description: OpenJDK Development Kit (JDK) (headless)
+Description-md5: 494a52f34d707a832270d6d51a78f511
+Multi-Arch: same
+
+Package: openjdk-11-jdk
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 52
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Recommends: libxt-dev
+Replaces: openjdk-11-jre-headless (<< 11~19-2)
+Suggests: openjdk-11-demo, openjdk-11-source, visualvm
+Provides: java-compiler, java-sdk, java10-sdk, java11-sdk, java2-sdk, java5-sdk, java6-sdk, java7-sdk, java8-sdk, java9-sdk
+Depends: openjdk-11-jre (= 11~24-1~16.04.1), openjdk-11-jdk-headless (= 11~24-1~16.04.1), libc6 (>= 2.2.5)
+Conflicts: openjdk-11-jre-headless (<< 11~19-2)
+Filename: pool/main/o/openjdk-11/openjdk-11-jdk_11~24-1~16.04.1_amd64.deb
+Size: 13296
+MD5sum: 6f409a3493ca1fd37d358005c4fe7943
+SHA1: 8a7f2ae26b6ab4f0daaf39b0d8a85cb32317f3aa
+SHA256: 2968062a483e7005828dd72d9da7e062152f6f0bf5133a1df972222e1fcdb206
+Description: OpenJDK Development Kit (JDK)
+Description-md5: b9e7f4837238c34971e4a8b72ab7d045
+Multi-Arch: same
+
+Package: openjdk-11-jre-headless
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 165323
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Replaces: openjdk-11-jdk-headless (<< 11~18-2)
+Suggests: libnss-mdns, fonts-dejavu-extra, fonts-ipafont-gothic, fonts-ipafont-mincho, fonts-wqy-microhei | fonts-wqy-zenhei, fonts-indic
+Provides: java-runtime-headless, java10-runtime-headless, java11-runtime-headless, java2-runtime-headless, java5-runtime-headless, java6-runtime-headless, java7-runtime-headless, java8-runtime-headless, java9-runtime-headless
+Depends: ca-certificates-java, java-common (>= 0.28), libcups2, liblcms2-2 (>= 2.2+git20110628), libjpeg8 (>= 8c), libfontconfig1, libnss3 (>= 2:3.17.1), util-linux (>= 2.26.2-4), libasound2 (>= 1.0.16), libc6 (>= 2.14), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.4), libpcsclite1 (>= 1.3.0), libstdc++6 (>= 4.1.1), libx11-6, libxext6, libxi6, libxrender1, libxtst6, zlib1g (>= 1:1.1.4)
+Conflicts: openjdk-11-jdk-headless (<< 11~18-2), oracle-java11-installer
+Filename: pool/main/o/openjdk-11/openjdk-11-jre-headless_11~24-1~16.04.1_amd64.deb
+Size: 36574892
+MD5sum: 9107907db7a9b1e6034a4ae7a03c2f35
+SHA1: d061b963724ae1891bc7fac0022d57becb740255
+SHA256: 55a726c71d223455749cfae5d384a4d51f99a9d65e26df974b891ed7517669a4
+Description: OpenJDK Java runtime, using Hotspot JIT (headless)
+Description-md5: 62c2c9689e617c48cc4480926d2ca785
+Multi-Arch: same
+
+Package: openjdk-11-jre-zero
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 7497
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Depends: openjdk-11-jre-headless (= 11~24-1~16.04.1), libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Filename: pool/main/o/openjdk-11/openjdk-11-jre-zero_11~24-1~16.04.1_amd64.deb
+Size: 2261850
+MD5sum: c5e0a1402c5b18f67b4a718944fe1546
+SHA1: d88dda87f8ec49c3199306ac2215f126ea7ace9c
+SHA256: 203f669ede3bcc98ae9656c6000225f6a622d8b36d04dc938675761bd39ccd1c
+Description: Alternative JVM for OpenJDK, using Zero
+Description-md5: c714861c802c9808def07d5329c6ed78
+Multi-Arch: same
+
+Package: openjdk-11-jre
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 107
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Version: 11~24-1~16.04.1
+Recommends: fonts-dejavu-extra
+Provides: java-runtime, java10-runtime, java11-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime, java8-runtime, java9-runtime
+Depends: openjdk-11-jre-headless (= 11~24-1~16.04.1), libglib2.0-0 (>= 2.24), libgtk-3-0, libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2), libc6 (>= 2.14), libgif7 (>= 5.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6
+Filename: pool/main/o/openjdk-11/openjdk-11-jre_11~24-1~16.04.1_amd64.deb
+Size: 34474
+MD5sum: 291481ba17a6f3600c043505a88acbdf
+SHA1: 3e7bc1e5d2bcb88f90c275c4a8767f6bd97a40f5
+SHA256: 2d16a9b53a7b86f7828913eeaba9959d2b4d82e2f0b3cba06fa733d8a93ded34
+Description: OpenJDK Java runtime, using Hotspot JIT
+Description-md5: 13097853553de1ab39cc189225a9cbaa
+Multi-Arch: same
+
+Package: openjdk-11-doc
+Source: openjdk-11
+Priority: optional
+Section: doc
+Installed-Size: 277925
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 11~24-1~16.04.1
+Suggests: openjdk-11-jdk
+Filename: pool/main/o/openjdk-11/openjdk-11-doc_11~24-1~16.04.1_all.deb
+Size: 13402850
+MD5sum: 81359d61c0efb49cd798c8f8319c7c5e
+SHA1: 67687efa7fbaabf07916956094ec73709394ef29
+SHA256: 056bb89801eb607fa878243fb95e957831ff28c915d2f166c1f786d3f7cd0e16
+Description: OpenJDK Development Kit (JDK) documentation
+Description-md5: 4689d9c1e14d405d15f0710639599643
+Multi-Arch: foreign
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+
+Package: openjdk-11-source
+Source: openjdk-11
+Priority: optional
+Section: java
+Installed-Size: 56464
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: all
+Version: 11~24-1~16.04.1
+Depends: openjdk-11-jdk (>= 11~24-1~16.04.1)
+Filename: pool/main/o/openjdk-11/openjdk-11-source_11~24-1~16.04.1_all.deb
+Size: 51614346
+MD5sum: 8fafea5ca7112ec9f121212443004ce6
+SHA1: 4b62f2b9e131013d37ddd7501bfabd403161791a
+SHA256: 96d5aaeb3899afcea317bcc82fde7be47ccad4a397b045fc81cd24077d8046da
+Description: OpenJDK Development Kit (JDK) source files
+Description-md5: 5e4d8bbb398daa24b05478a4a3be42bf
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+

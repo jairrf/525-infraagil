@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Run preinstall scripts on install if defined
+if [ $1 = install ] && [ -z $2 ] ; then
+ : no preinstall scripts provided
+fi
+
+# Run preinstall scripts on upgrade if defined
+if [ $1 = upgrade ] && [ -n $2 ] ; then
+ # Backup the old hiera configs if present, so that we
+# can drop them back in place if the package manager
+# tries to remove it.
+if [ -e /etc/puppetlabs/code/hiera.yaml ]; then
+ cp -a /etc/puppetlabs/code/hiera.yaml{,.pkg-old}
+ touch /etc/puppetlabs/puppet/remove_hiera5_files.rm
+fi
+if [ -e /etc/puppetlabs/puppet/hiera.yaml ]; then
+ cp -a /etc/puppetlabs/puppet/hiera.yaml{,.pkg-old}
+ touch /etc/puppetlabs/puppet/remove_hiera5_files.rm
+fi
+if [ -e /etc/puppetlabs/code/environments/production/hiera.yaml ]; then
+ cp -a /etc/puppetlabs/code/environments/production/hiera.yaml{,.pkg-old}
+ touch /etc/puppetlabs/puppet/remove_hiera5_files.rm
+fi
+
+fi

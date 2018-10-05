@@ -1,0 +1,350 @@
+Package: openjdk-7-jdk
+Description-md5: eaff50443f15582a8beb0901034b62cf
+Description-en: OpenJDK Development Kit (JDK)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre-headless
+Description-md5: 20eb08d56f9496cba7ae5bc1fc762f93
+Description-en: OpenJDK Java runtime, using Hotspot JIT (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot JIT.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre
+Description-md5: adca808a02a80aed4051cc95b7fe5f37
+Description-en: OpenJDK Java runtime, using Hotspot JIT
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot JIT.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-demo
+Description-md5: c2a5624aa60e4de3025a249886fa82d7
+Description-en: Java runtime based on OpenJDK (demos and examples)
+ OpenJDK Java runtime
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-dbg
+Description-md5: 62cbbd2d3e6bc94279f18db4f735142b
+Description-en: Java runtime based on OpenJDK (debugging symbols)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the debugging symbols.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre-lib
+Description-md5: bebecf68d1d68be6a49b7acfed74f186
+Description-en: OpenJDK Java runtime (architecture independent libraries)
+ OpenJDK Java runtime, using Hotspot JIT.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+ .
+ This is a transitional package. You can safely remove it.
+
+Package: openjdk-7-source
+Description-md5: 328263bb6fbf81f04f5d459d67244ea0
+Description-en: OpenJDK Development Kit (JDK) source files
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the Java programming language source files
+ (src.zip) for all classes that make up the Java core API.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-doc
+Description-md5: c1aebd5e8058a6cce0d5690571eddb7b
+Description-en: OpenJDK Development Kit (JDK) documentation
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the API documentation.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre-zero
+Description-md5: ca0db1fb38a237b982a1de5e6d632720
+Description-en: Alternative JVM for OpenJDK, using Zero/Shark
+ The package provides an alternative runtime using the Zero VM and the
+ Shark Just In Time Compiler (JIT).  Built on architectures in addition
+ to the Hotspot VM as a debugging aid for those architectures which don't
+ have a Hotspot VM.
+ .
+ The VM is started with the option `-zero'. See the README.Debian for details.
+
+Package: icedtea-7-jre-jamvm
+Description-md5: a3b67c2c3683232269f84a02ede3fd4b
+Description-en: Alternative JVM for OpenJDK, using JamVM
+ The package provides an alternative runtime using the JamVM.  This is a
+ somewhat faster alternative than the Zero port on architectures like armel,
+ mips, mipsel, powerpc.
+ .
+ The VM is started with the option `-jamvm'. See the README.Debian for details.
+
+Package: jtreg
+Description-md5: 611519f9a173fc2ad95de16a2d1a0c04
+Description-en: Regression Test Harness for the OpenJDK platform
+ jtreg is the test harness used by the OpenJDK test framework.
+ This framework is intended primarily for regression tests.
+ It can also be used for unit tests, functional tests, and even simple product
+ tests -- in other words, just about any type of test except a conformance test,
+ which belong in a TCK.
+
+Package: openjdk-9-jdk
+Description-md5: b9e7f4837238c34971e4a8b72ab7d045
+Description-en: OpenJDK Development Kit (JDK)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+
+Package: openjdk-9-jre-headless
+Description-md5: 62c2c9689e617c48cc4480926d2ca785
+Description-en: OpenJDK Java runtime, using Hotspot JIT (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot JIT.
+
+Package: openjdk-9-jre
+Description-md5: 13097853553de1ab39cc189225a9cbaa
+Description-en: OpenJDK Java runtime, using Hotspot JIT
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot JIT.
+
+Package: openjdk-9-demo
+Description-md5: 8c587e17f25fb354ef51e27e56507756
+Description-en: Java runtime based on OpenJDK (demos and examples)
+ OpenJDK Java runtime
+
+Package: openjdk-9-dbg
+Description-md5: d73cb0a41450fd194ce774f2b26510b8
+Description-en: Java runtime based on OpenJDK (debugging symbols)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the debugging symbols.
+
+Package: openjdk-9-source
+Description-md5: 5e4d8bbb398daa24b05478a4a3be42bf
+Description-en: OpenJDK Development Kit (JDK) source files
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the Java programming language source files
+ (src.zip) for all classes that make up the Java core API.
+
+Package: openjdk-9-doc
+Description-md5: 4689d9c1e14d405d15f0710639599643
+Description-en: OpenJDK Development Kit (JDK) documentation
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the API documentation.
+
+Package: openjdk-9-jdk-headless
+Description-md5: 494a52f34d707a832270d6d51a78f511
+Description-en: OpenJDK Development Kit (JDK) (headless)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+
+Package: openjdk-10-dbg
+Description-md5: d73cb0a41450fd194ce774f2b26510b8
+Description-en: Java runtime based on OpenJDK (debugging symbols)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the debugging symbols.
+
+Package: openjdk-10-demo
+Description-md5: 8c587e17f25fb354ef51e27e56507756
+Description-en: Java runtime based on OpenJDK (demos and examples)
+ OpenJDK Java runtime
+
+Package: openjdk-10-jdk-headless
+Description-md5: 494a52f34d707a832270d6d51a78f511
+Description-en: OpenJDK Development Kit (JDK) (headless)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+
+Package: openjdk-10-jdk
+Description-md5: b9e7f4837238c34971e4a8b72ab7d045
+Description-en: OpenJDK Development Kit (JDK)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+
+Package: openjdk-10-jre-headless
+Description-md5: 62c2c9689e617c48cc4480926d2ca785
+Description-en: OpenJDK Java runtime, using Hotspot JIT (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot JIT.
+
+Package: openjdk-10-jre-zero
+Description-md5: c714861c802c9808def07d5329c6ed78
+Description-en: Alternative JVM for OpenJDK, using Zero
+ The package provides an alternative runtime using the Zero VM. Built on
+ architectures in addition to the Hotspot VM as a debugging aid for those
+ architectures which don't have a Hotspot VM.
+ .
+ The VM is started with the option `-zero'. See the README.Debian for details.
+
+Package: openjdk-10-jre
+Description-md5: 13097853553de1ab39cc189225a9cbaa
+Description-en: OpenJDK Java runtime, using Hotspot JIT
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot JIT.
+
+Package: openjdk-10-doc
+Description-md5: 4689d9c1e14d405d15f0710639599643
+Description-en: OpenJDK Development Kit (JDK) documentation
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the API documentation.
+
+Package: openjdk-10-source
+Description-md5: 5e4d8bbb398daa24b05478a4a3be42bf
+Description-en: OpenJDK Development Kit (JDK) source files
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the Java programming language source files
+ (src.zip) for all classes that make up the Java core API.
+
+Package: openjdk-11-dbg
+Description-md5: d73cb0a41450fd194ce774f2b26510b8
+Description-en: Java runtime based on OpenJDK (debugging symbols)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the debugging symbols.
+
+Package: openjdk-11-demo
+Description-md5: 8c587e17f25fb354ef51e27e56507756
+Description-en: Java runtime based on OpenJDK (demos and examples)
+ OpenJDK Java runtime
+
+Package: openjdk-11-jdk-headless
+Description-md5: 494a52f34d707a832270d6d51a78f511
+Description-en: OpenJDK Development Kit (JDK) (headless)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+
+Package: openjdk-11-jdk
+Description-md5: b9e7f4837238c34971e4a8b72ab7d045
+Description-en: OpenJDK Development Kit (JDK)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+
+Package: openjdk-11-jre-headless
+Description-md5: 62c2c9689e617c48cc4480926d2ca785
+Description-en: OpenJDK Java runtime, using Hotspot JIT (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot JIT.
+
+Package: openjdk-11-jre-zero
+Description-md5: c714861c802c9808def07d5329c6ed78
+Description-en: Alternative JVM for OpenJDK, using Zero
+ The package provides an alternative runtime using the Zero VM. Built on
+ architectures in addition to the Hotspot VM as a debugging aid for those
+ architectures which don't have a Hotspot VM.
+ .
+ The VM is started with the option `-zero'. See the README.Debian for details.
+
+Package: openjdk-11-jre
+Description-md5: 13097853553de1ab39cc189225a9cbaa
+Description-en: OpenJDK Java runtime, using Hotspot JIT
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot JIT.
+
+Package: openjdk-11-doc
+Description-md5: 4689d9c1e14d405d15f0710639599643
+Description-en: OpenJDK Development Kit (JDK) documentation
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the API documentation.
+
+Package: openjdk-11-source
+Description-md5: 5e4d8bbb398daa24b05478a4a3be42bf
+Description-en: OpenJDK Development Kit (JDK) source files
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.
+ .
+ This package contains the Java programming language source files
+ (src.zip) for all classes that make up the Java core API.
+
+Package: openjdk-9-jre-zero
+Description-md5: c714861c802c9808def07d5329c6ed78
+Description-en: Alternative JVM for OpenJDK, using Zero
+ The package provides an alternative runtime using the Zero VM. Built on
+ architectures in addition to the Hotspot VM as a debugging aid for those
+ architectures which don't have a Hotspot VM.
+ .
+ The VM is started with the option `-zero'. See the README.Debian for details.
+
+Package: openjdk-7-jre-headless
+Description-md5: 501cffbd670429c46b6c73ca3974ed93
+Description-en: OpenJDK Java runtime, using Hotspot Zero (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot Zero.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-7-jre
+Description-md5: d8844993602e4875dfbd87983091c18c
+Description-en: OpenJDK Java runtime, using Hotspot Zero
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot Zero.
+ .
+ The packages are built using the IcedTea build support and patches
+ from the IcedTea project.
+
+Package: openjdk-9-jre-headless
+Description-md5: 125494d786a73a442968635c3a21c714
+Description-en: OpenJDK Java runtime, using Hotspot Zero (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot Zero.
+
+Package: openjdk-9-jre
+Description-md5: 5bad8f597e182fdf0635f3b9fccbce1a
+Description-en: OpenJDK Java runtime, using Hotspot Zero
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot Zero.
+
+Package: openjdk-10-jre-headless
+Description-md5: 125494d786a73a442968635c3a21c714
+Description-en: OpenJDK Java runtime, using Hotspot Zero (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot Zero.
+
+Package: openjdk-10-jre
+Description-md5: 5bad8f597e182fdf0635f3b9fccbce1a
+Description-en: OpenJDK Java runtime, using Hotspot Zero
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot Zero.
+
+Package: openjdk-11-jre-headless
+Description-md5: 125494d786a73a442968635c3a21c714
+Description-en: OpenJDK Java runtime, using Hotspot Zero (headless)
+ Minimal Java runtime - needed for executing non GUI Java programs,
+ using Hotspot Zero.
+
+Package: openjdk-11-jre
+Description-md5: 5bad8f597e182fdf0635f3b9fccbce1a
+Description-en: OpenJDK Java runtime, using Hotspot Zero
+ Full Java runtime environment - needed for executing Java GUI and Webstart
+ programs, using Hotspot Zero.
+

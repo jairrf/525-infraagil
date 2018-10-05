@@ -1,0 +1,16 @@
+Package: ansible
+Priority: optional
+Section: admin
+Installed-Size: 33557
+Maintainer: Ansible, Inc. <info@ansible.com>
+Architecture: all
+Version: 2.7.0-1ppa~xenial
+Depends: python-jinja2, python-yaml, python-paramiko, python-httplib2, python-six, python-crypto (>= 2.6), python-setuptools, sshpass, python-cryptography, python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: pool/main/a/ansible/ansible_2.7.0-1ppa~xenial_all.deb
+Size: 3897592
+MD5sum: 407fbe958cc703761fe220adc244cf6d
+SHA1: 5beaeafb06ecf96c782b8d6208f8bb79b4ad6b77
+SHA256: e4cf0b04a064faf9d14885073ea68b63e888b21cecd4f6ce48580db5140a954f
+Description: Ansible IT Automation
+Description-md5: 05b9de3600ec3f5832815c493a899995
+

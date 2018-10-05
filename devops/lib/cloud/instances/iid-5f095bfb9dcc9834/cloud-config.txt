@@ -1,0 +1,8 @@
+#cloud-config
+
+# from 1 files
+# part-001
+
+---
+manage_etc_hosts: localhost
+...

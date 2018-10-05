@@ -1,0 +1,30 @@
+lease {
+  interface "enp0s3";
+  fixed-address 10.0.2.15;
+  filename "infraagil_devops_1538397302134_85521.pxe";
+  option subnet-mask 255.255.255.0;
+  option routers 10.0.2.2;
+  option dhcp-lease-time 86400;
+  option dhcp-message-type 5;
+  option domain-name-servers 10.0.2.3;
+  option dhcp-server-identifier 10.0.2.2;
+  option domain-name "salas4linux.com.br";
+  renew 5 2018/10/05 04:35:01;
+  rebind 5 2018/10/05 14:12:29;
+  expire 5 2018/10/05 17:12:29;
+}
+lease {
+  interface "enp0s3";
+  fixed-address 10.0.2.15;
+  filename "infraagil_devops_1538397302134_85521.pxe";
+  option subnet-mask 255.255.255.0;
+  option dhcp-lease-time 86400;
+  option routers 10.0.2.2;
+  option dhcp-message-type 5;
+  option dhcp-server-identifier 10.0.2.2;
+  option domain-name-servers 10.0.2.3;
+  option domain-name "salas4linux.com.br";
+  renew 5 2018/10/05 22:44:54;
+  rebind 6 2018/10/06 08:56:48;
+  expire 6 2018/10/06 11:56:48;
+}

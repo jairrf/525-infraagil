@@ -1,0 +1,4 @@
+- name: Criando Site
+  template:
+   src: templates/index
+   dest: /var/www/html/index.html

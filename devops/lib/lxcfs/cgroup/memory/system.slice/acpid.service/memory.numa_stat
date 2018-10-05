@@ -1,0 +1,8 @@
+total=48 N0=48
+file=12 N0=12
+anon=36 N0=36
+unevictable=0 N0=0
+hierarchical_total=48 N0=48
+hierarchical_file=12 N0=12
+hierarchical_anon=36 N0=36
+hierarchical_unevictable=0 N0=0

@@ -1,0 +1,2 @@
+/etc/apt/sources.list.d/puppet5.list
+/etc/apt/trusted.gpg.d/puppet5-keyring.gpg

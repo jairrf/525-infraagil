@@ -1,0 +1,11 @@
+/etc/default/puppetserver
+/etc/init.d/puppetserver
+/etc/puppetlabs/puppetserver/conf.d/auth.conf
+/etc/puppetlabs/puppetserver/conf.d/global.conf
+/etc/puppetlabs/puppetserver/conf.d/metrics.conf
+/etc/puppetlabs/puppetserver/conf.d/puppetserver.conf
+/etc/puppetlabs/puppetserver/conf.d/web-routes.conf
+/etc/puppetlabs/puppetserver/conf.d/webserver.conf
+/etc/puppetlabs/puppetserver/logback.xml
+/etc/puppetlabs/puppetserver/request-logging.xml
+/etc/puppetlabs/puppetserver/services.d/ca.cfg

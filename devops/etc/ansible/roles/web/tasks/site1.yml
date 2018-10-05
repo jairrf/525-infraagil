@@ -1,0 +1,5 @@
+- name: Configurando site
+  blockinfile:
+   path: /var/www/html/index.html
+   block: |
+    INFRAESTRUTURA AGIL COM DEVOPS   

@@ -1,0 +1,4 @@
+activate puppetserver-restart
+
+# Triggers added by dh_makeshlibs
+activate-noawait ldconfig

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/puppet5-release
+/usr/share/doc/puppet5-release/bill-of-materials
+/usr/share/doc/puppet5-release/changelog.Debian.gz
+/etc
+/etc/apt
+/etc/apt/sources.list.d
+/etc/apt/sources.list.d/puppet5.list
+/etc/apt/trusted.gpg.d
+/etc/apt/trusted.gpg.d/puppet5-keyring.gpg
